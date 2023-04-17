@@ -25,7 +25,7 @@ Por ejemplo, si el usuario ingresa 1600 minutos, el sistema debe calcular su equ
  */
 
         Scanner leer = new Scanner(System.in);
-        System.out.println("Ingresa un tiempo en minutos");
+        System.out.println(" ingrese los minutos");
         int minutos = leer.nextInt();
         int horas = minutos / 60;
         int dias = 0;
@@ -33,7 +33,7 @@ Por ejemplo, si el usuario ingresa 1600 minutos, el sistema debe calcular su equ
             horas -= 24;
             dias++;
         }
-        System.out.println("Su equivalente en días es " + dias + " y horas " + horas);
+        System.out.println("Su equivalente en días es: " + dias + " y horas: " + horas);
     }
     
 }

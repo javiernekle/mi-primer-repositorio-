@@ -31,31 +31,31 @@ si quiere seguir mostrando personas y frenar cuando el usuario ingrese la palabr
         String fin;
         do {
             System.out.print("Ingrese un nombre: ");
-            String NOM = nombre(leer);
+            String nombre = leer.next();
             System.out.print("Ingrese una edad: ");
-            int edad = edad(leer);
-            mostrar(NOM, edad);
+            int edad = leer.nextInt();
+            mostrar(nombre, edad);
             System.out.println("Desea continuar? Si/No");
             fin = leer.next();
         } while (!(fin.equals("No")));
     }
 
-    public static void mostrar(String nomb, int ed) {
-        if (ed >= 18) {
-            System.out.println(nomb + " tiene " + ed + " años y es mayor de edad");
+    public static void mostrar(String nombre, int edad) {
+        if (edad >= 18) {
+            System.out.println(nombre + " tiene " + edad + " años y es mayor de edad");
         } else {
-            System.out.println(nomb + " tiene " + ed + " años y NO es mayor de edad");
+            System.out.println(nombre + " tiene " + edad + " años y NO es mayor de edad");
         }
     }
 
     public static String nombre(Scanner l) {
-        String nomb = l.next();
-        return nomb;
+        String nombre = l.next();
+        return nombre;
     }
 
     public static int edad(Scanner l) {
-        int ed = l.nextInt();
-        return ed;
+        int edad = l.nextInt();
+        return edad;
     }
    
 }

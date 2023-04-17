@@ -16,7 +16,7 @@ public class actividadN7 {
     /**
      * @param args the command line arguments
      */
-    public static void main(String[] args) {
+ public static void main(String[] args) {
         // TODO code application logic here
         
        /*Realizar un programa que simule el funcionamiento de un dispositivo RS232, este tipo de dispositivo lee cadenas enviadas por el usuario. 
@@ -27,23 +27,32 @@ y toda secuencia distinta de FDE, que no respete el formato se considera incorre
 Al finalizar el proceso, se imprime un informe indicando la cantidad de lecturas correctas e incorrectas recibidas. 
 Para resolver el ejercicio deberá investigar cómo se utilizan las siguientes funciones de Java Substring(), Length(), equals().*/
 
-Scanner leer = new Scanner(System.in);
-        String cadena;
-        int contadorCorrectas = 0;
-        int contadorIncorrectas = 0;
-        do {
-            System.out.println("Ingrese una cadena");
-            cadena = leer.next();
-            boolean b = cadena.length() <= 5 && cadena.startsWith("X") && cadena.endsWith("O");
-            if (b) {
-                contadorCorrectas++;
-            } else {
-                contadorIncorrectas++;
-            }
-        } while (!"&&&&&".equals(cadena));
-        System.out.println("Se leyeron " + contadorCorrectas + " cadenas correctas");
-        System.out.println("Se leyeron " + contadorIncorrectas + " cadenas incorrectas");
-        
+  Scanner leer = new Scanner(System.in);
+
+  String cadena;
+  int contadorcorrectas = 0;
+  int contadorincorrectas = 0;
+
+  do {      
+ 
+System.out.println("ingrese una cadena");
+ cadena = leer.next();
+ 
+ boolean FDE = cadena.length() <=5 && cadena.startsWith("x") && cadena.endsWith("o");
+ 
+ if (FDE) {
+  contadorcorrectas ++;
+ }else{
+         
+  contadorincorrectas ++;
+ }
+ }while (!"&&&&&".equals(cadena));
+       
+ System.err.println("_____________________________________");
+ System.out.println("se ingresaron: " + contadorcorrectas   + " cadenas correctas");
+ System.err.println("_____________________________________");
+ System.out.println("se ingresaron: " + (contadorincorrectas -1 + " cadenas incorrectas"));
+ System.err.println("_____________________________________");
     }
-    
-}
+
+}    

@@ -19,16 +19,15 @@ public class actividadN4 {
     public static void main(String[] args) {
         // TODO code application logic here
         
-        //Dada una cantidad de grados centígrados se debe mostrar su equivalente en grados Fahrenheit.
-        //La fórmula correspondiente es: F = 32 + (9 * C / 5).
-        //Scanner leer = new Scanner(System.in);
-        
+        /*Dada una cantidad de grados centígrados se debe mostrar su equivalente en grados Fahrenheit.
+        La fórmula correspondiente es: F = 32 + (9 * C / 5).*/
+      
+        Scanner leer = new Scanner(System.in);
+           
         System.out.println("Ingrese la cantidad de grados centígrados");
         
-         Scanner leer = new Scanner(System.in);
-             
-        double centigrados = leer.nextDouble();
-        double F = 32 + (9 * centigrados / 5);
+        double c = leer.nextDouble();
+        double F = 32 + (9 * c / 5);
        
         System.out.println("Los grados convetidos a Fahrenheit son: " + F);
     }

@@ -26,40 +26,43 @@ Tener en cuenta que, si el usuario selecciona la opción 5, en vez de salir del 
 se debe mostrar el siguiente mensaje de confirmación: ¿Está seguro que desea salir del programa (S/N)? 
 Si el usuario selecciona el carácter ‘S’ se sale del programa, caso contrario se vuelve a mostrar el menú.*/
 
-
-        Scanner leer = new Scanner(System.in);
-        System.out.println("Ingrese dos números enteros positivos");
+     Scanner leer = new Scanner(System.in); 
+  
+     System.out.println("ingrese 2 numeros enteros");
         int num1 = leer.nextInt();
         int num2 = leer.nextInt();
-        String opcion;
-        do {
-            System.out.println("Seleccione una opción"
-                    + "\n1. Sumar"
-                    + "\n2. Restar"
-                    + "\n3. Multiplicar"
-                    + "\n4. Dividir"
-                    + "\n5. Salir"
-                    + "\nElija opción");
-            opcion = leer.next();
-            switch (opcion) {
+        String opción;
+       
+  do{
+          System.out.println("menú"
+          + "\n1. sumar" 
+          + "\n2. restar"
+          + "\n3. multplicar"    
+          + "\n4. dividir"
+          + "\n5. salir"
+          + "\nElija una opción");  
+          opción = leer.nextLine();
+       
+  switch (opción){
+       
                 case "1":
-                    System.out.println("La suma de " + num1 + " con " + num2 + " es de: " + (num1 + num2));
-                    break;
+                System.err.println(" la suma es: " + (num1 + num2 ));
+                break;
                 case "2":
-                    System.out.println("La resta de " + num1 + " con " + num2 + " es de: " + (num1 - num2));
-                    break;
+                System.err.println(" la resta es: " + (num1 - num2));
+                break;
                 case "3":
-                    System.out.println("La multiplicacion de " + num1 + " con " + num2 + " es de: " + (num1 * num2));
-                    break;
-
-                case "4":
-                    System.out.println("La división de " + num1 + " con " + num2 + " es de: " + (num1 / num2));
-                    break;
+                System.err.println("la multiplicacion es: " + (num1 * num2));
+                 case "4":
+                System.err.println("la divicion es: " + (num1 / num2));
+                break;
                 case "5":
-                    System.out.println("Seguro desea salir?");
-                    opcion = leer.next();
-            }
-        } while (!"S".equalsIgnoreCase(opcion));
+                System.out.println("estas seguro de que desaea salir del programa? (S.N) ");
+                opción = leer.next();
+         }
+  
+  }while (!"S".equalsIgnoreCase(opción));
+        
     }
     
 }

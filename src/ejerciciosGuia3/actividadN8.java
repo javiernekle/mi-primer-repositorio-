@@ -28,18 +28,20 @@ Por ejemplo, si el cuadrado tiene 4 elementos por lado se deberá dibujar lo sig
  */
 
         Scanner leer = new Scanner(System.in);
+       
         System.out.println("Ingrese el tamaño del cuadrado");
+       
         int tamanio = leer.nextInt();
+       
         for (int i = 0; i < tamanio; i++) {
             for (int j = 0; j < tamanio; j++) {
-                if (i == 0 || i == tamanio - 1 || j == 0 || j == tamanio - 1) {
+                if (i == 0 || i == tamanio -1 || j == 0 || j == tamanio-1){
                     System.out.print(" * ");
-                } else {
+                }else{
                     System.out.print("   ");
                 }
             }
             System.out.println();
-        }
-    }
-    
-}
+     }
+   } 
+ }

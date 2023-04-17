@@ -19,21 +19,19 @@ public class actividadN5 {
     public static void main(String[] args) {
         // TODO code application logic here
         
-         // Escribir un programa que lea un número entero por teclado
-       //y muestre por pantalla el doble, el triple y la raíz cuadrada de ese número. 
-       //Nota: investigar la función Math.sqrt().
+     /* Escribir un programa que lea un número entero por teclado
+        y muestre por pantalla el doble, el triple y la raíz cuadrada de ese número. 
+        Nota: investigar la función Math.sqrt().*/
 
         Scanner leer = new Scanner(System.in);
        
         System.out.println("Ingrese un número");
-        int numero = leer.nextInt();
-        int numeroDoble = numero * 2;
-        int numeroTriple = numero * 3;
-        double raizCuadrada = Math.sqrt(numero);
+        int num = leer.nextInt();
+        int doble = num * 2;
+        int triple = num * 3;
+        double raiz = Math.sqrt(num);
         
-        System.out.println("Su doble es: " + numeroDoble);
-        System.out.println("Su triple es: " + numeroTriple);
-        System.out.println("Su raiz cuadrada es: " + raizCuadrada);
+        System.out.println("el doble es: " + doble +  " el triple es: " + triple + " la raiz es: " + raiz);
     }
     
 }

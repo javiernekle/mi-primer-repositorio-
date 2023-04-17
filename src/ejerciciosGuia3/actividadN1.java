@@ -18,17 +18,20 @@ public class actividadN1 {
      */
     public static void main(String[] args) {
         // TODO code application logic here
-          Scanner leer = new Scanner(System.in);
+   
+        /* Crear un programa que dado un número determine si es par o impar.*/
+      
+        Scanner leer = new Scanner(System.in);
         
          
-        System.out.println("Ingrese una frase");
-        String frase = leer.next();
+        System.out.println("Ingrese un numero");
+        int num = leer.nextInt();
         // declarar e inicializar
-        if(frase.equals("eureka hola")){
-            System.out.println("Correcto");
-        }else{
-            System.out.println("Incorrecto");
+        if(num % 2 == 0){
+            System.out.println("es par");
+    }else{
+            System.out.println("es impar");
         }  
     }
-    
 }
+

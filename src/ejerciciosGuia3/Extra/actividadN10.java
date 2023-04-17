@@ -46,6 +46,7 @@ Para realizar este ejercicio investigue como utilizar la función Math.random() 
                 }
             }
         } while (!adivino);
+        System.out.println("exelente numero adivinado");
     }
     
 }

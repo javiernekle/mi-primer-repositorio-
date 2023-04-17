@@ -23,23 +23,25 @@ A tome el valor de D y D tome el valor de B. Mostrar los valores iniciales y los
 Utilizar sólo una variable auxiliar.
  */
 
-         int A = 0, B = 3, C = 5, D = 6;
+          
+         int A,B,C,D,AUXILIAR;
+          A = 1;
+          B = 2;
+          C = 3;
+          D = 4;
+          AUXILIAR = B;
        
-         System.out.println("Valores iniciales: A=" + A + ", B=" + B + ", C=" + C + ", D=" + D);
+          System.out.println("valores inicilaes son;" + " A = " + A + " B = " + B + " C = " + C + " D = " + D);
+      
+          if ( A != B && B != C && C != D);{
+           B = C;
+           C = A;
+           A = D;
+           D = AUXILIAR;
         
-        if (A != B && B != C && C != D) {
-            int aux = B;
-            B = C;
-            C = A;
-            A = D;
-            D = aux;
-        } else {
-            
-            System.out.println("Los valores son iguales");
-        }
-        System.out.println("Valores finales: A=" + A + ", B=" + B + ", C=" + C + ", D=" + D);
+      }
+           System.out.println("valores FINALES son;" + " A = " + A + " B = " + B + " C = " + C + " D = " + D);     
     }
 }
-        
 
     
